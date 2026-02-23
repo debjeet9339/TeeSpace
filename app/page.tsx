@@ -1,3 +1,4 @@
+import Footer from "./footer/page";
 import HeroSection from "./hero_section/page";
 import LandingPage from "./landing_page/page";
 
@@ -6,6 +7,7 @@ export default function Home() {
     <>
       <LandingPage />
       <HeroSection />
+      <Footer />
     </>
   );
 }

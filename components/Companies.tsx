@@ -12,42 +12,24 @@ export default function Companies() {
         </h2>
 
         {/* Company Logos */}
-        <div className="flex flex-wrap justify-center items-center gap-10 opacity-80">
-          <Image
-            src="/Spotify_Logo.png"
-            alt="Spotify"
-            width={180}
-            height={40}
-            className="object-contain hover:grayscale-0 transition duration-300"
-          />
-          <Image
-            src="/Upwork-logo.png"
-            alt="Google"
-            width={180}
-            height={40}
-            className="object-contain hover:grayscale-0 transition duration-300"
-          />
-          <Image
-            src="/lattice-logo.png"
-            alt="Netflix"
-            width={180}
-            height={40}
-            className="object-contain hover:grayscale-0 transition duration-300"
-          />
-          <Image
-            src="/Hopin_logo.png"
-            alt="Netflix"
-            width={200}
-            height={40}
-            className="object-contain hover:grayscale-0 transition duration-300"
-          />
-          <Image
-            src="/feedly-logo.png"
-            alt="Netflix"
-            width={180}
-            height={40}
-            className="object-contain hover:grayscale-0 transition duration-300"
-          />
+        <div className="overflow-hidden bg-transparant py-6">
+          <div className="marquee gap-10 items-center">
+
+            {/* First Set */}
+            <Image src="/Spotify_Logo.png" alt="Spotify" width={180} height={40} />
+            <Image src="/Upwork-logo.png" alt="Upwork" width={180} height={40} />
+            <Image src="/lattice-logo.png" alt="Lattice" width={180} height={40} />
+            <Image src="/Hopin_logo.png" alt="Hopin" width={200} height={40} />
+            <Image src="/feedly-logo.png" alt="Feedly" width={180} height={40} />
+
+            {/* Duplicate Set for seamless scroll */}
+            <Image src="/Spotify_Logo.png" alt="Spotify" width={180} height={40} />
+            <Image src="/Upwork-logo.png" alt="Upwork" width={180} height={40} />
+            <Image src="/lattice-logo.png" alt="Lattice" width={180} height={40} />
+            <Image src="/Hopin_logo.png" alt="Hopin" width={200} height={40} />
+            <Image src="/feedly-logo.png" alt="Feedly" width={180} height={40} />
+
+          </div>
         </div>
 
       </div>

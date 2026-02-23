@@ -1,6 +1,7 @@
 import Companies from "@/components/Companies";
 import Image from "next/image";
 import Link from "next/link";
+import Features from "../features/page";
 
 export default function HeroSection() {
   return (
@@ -82,7 +83,7 @@ export default function HeroSection() {
           <div className="relative bg-white/40 backdrop-blur-xl p-6 rounded-[2.5rem] border border-white/40 shadow-[0_30px_80px_rgba(0,0,0,0.12)] transition-transform duration-500 group-hover:scale-[1.02]">
 
             <Image
-              src="/hero.png"
+              src="/illus.svg"
               alt="Custom T-Shirt Design Preview"
               width={600}
               height={700}
@@ -113,6 +114,7 @@ export default function HeroSection() {
       {/* Companies Section */}
       <div className="mt-10 lg:mt-16">
         <Companies />
+        <Features />
       </div>
     </section>
   );
